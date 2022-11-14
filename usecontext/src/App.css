@@ -1,0 +1,243 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: grey;
+  height: 100vh;
+  font-family: "Fira sans", sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: grey;
+  font-family: "Fira sans", sans-serif;
+}
+.my-tasks {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgb(224, 220, 220);
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+.input {
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: rgb(94, 94, 94);
+  color: rgb(196, 194, 194);
+  font-size: 1.1rem;
+  -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+}
+.edit-input {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: rgb(150, 145, 145);
+  color: rgb(196, 194, 194);
+  font-size: 1.1rem;
+  -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+  max-width: 160px;
+}
+.register-input {
+  position: relative;
+  left: 20px;
+}
+.button {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 40px;
+  background: #e0e029;
+  background: -moz-linear-gradient(
+    -45deg,
+    #e0e029 0%,
+    #cbb121 50%,
+    #e0e535 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #e0e029 0%,
+    #cbb121 50%,
+    #e0e535 100%
+  );
+  background: linear-gradient(135deg, #e0e029 0%, #cbb121 50%, #e0e535 100%);
+  -webkit-box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.39);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+.x-button {
+  position: relative;
+  left: 70px;
+  scale: 200%;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  width: auto;
+  overflow: visible;
+  margin-top: 15px;
+
+  background: transparent;
+}
+.edit-button {
+  scale: 200%;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 15px;
+  white-space: nowrap;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+  position: relative;
+  left: 40px;
+}
+.title-edit {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 10px;
+}
+.options-wrapper {
+  margin-top: 40px;
+}
+.todos-wrapper {
+  float: right;
+  background: #f8f7f6;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+  min-width: 260px;
+  max-height: 500px;
+  border: 1px solid #2e2d2c;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.39);
+  overflow: auto;
+}
+.todos-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.todos-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.todos-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 94, 94);
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+
+.list {
+  list-style-type: none;
+
+  font-size: small;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 30vh;
+}
+.task {
+  right: 1000px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+}
+.checkbutton-wrapper {
+  display: flex;
+  align-items: center;
+}
+.check-button {
+  scale: 200%;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  width: auto;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+.checked-button {
+  scale: 200%;
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  width: auto;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+.empty-list {
+  position: relative;
+  top: 50px;
+  font-size: large;
+  font-weight: 400;
+}
+.logout-button {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 40px;
+}
+.register-button,
+.login-button {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  line-height: 23px;
+  padding: 9px;
+  border-radius: 9px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 171, 172) 0%,
+    rgb(157, 158, 158) 50%,
+    rgb(103, 104, 104) 100%
+  );
+  box-shadow: rgb(65, 64, 64) 2px 2px 3px 2px;
+
+  display: inline-block;
+}
+.register-button:hover,
+.login-button:hover {
+  background: #505050;
+}
+.register-button:active,
+.login-button:active {
+  background: #4a4b4b;
+}
+.welcome {
+  color: rgba(224, 220, 220, 0.699);
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.introduction {
+  color: rgba(224, 220, 220, 0.993);
+  font-size: medium;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
